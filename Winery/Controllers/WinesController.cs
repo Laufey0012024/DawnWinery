@@ -39,7 +39,7 @@ namespace Winery.Controllers
                 movies = movies.Where(x => x.Type == movieGenre);
             }
 
-            var movieGenreVM = new winess
+            var movieGenreVM = new Wines
             {
                 WinGen = new SelectList(await genreQuery.Distinct().ToListAsync()),
                 Wineis = await movies.ToListAsync()

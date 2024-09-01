@@ -2,7 +2,7 @@
 
 namespace Winery.Models
 {
-    public class winess
+    public class Wines
     {
         public List<Wine>? Wineis { get; set; }
         public SelectList? WinGen { get; set; }

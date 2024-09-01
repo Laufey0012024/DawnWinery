@@ -1,33 +1,26 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+  Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+  ViewData["Title"] = "Test Page";
 }
 
-
-<style>
-    h1, p {
-        font-family: 'Lora', serif;
-        font-family: 'Playfair Display', serif
-    }
-
-    #slogan1 {
-        font-size: 100px;
-    }
-
-    #form-box {
-        margin-top: 200px;
-        margin-left: 250px;
-        backdrop-filter: blur(3px);
-        box-shadow: 8px 10px grey;
-        border-radius: 15px;
-        width: 850px;
-    }
-</style>
-
-
-<body>
-    <div class="text-center" id="form-box" style="border: 1px outset grey">
-        <h1 class="display-4" id="slogan1">Dawn Winery</h1>
-        <p><i>"Shine True, Forget not whence thou came"</i></p>
+<div class="relative overflow-hidden min-h-[100vh]">
+  @await Html.PartialAsync("_NavBar")
+  <main class="grid place-items-center p-6 max-w-[900px] mx-auto relative z-10">
+    <div style="grid-column: 3/-1;">
+      <h1 class="text-5xl font-bold mb-4">ALWAYS <span class="text-[#F40000]">BEST SERVED TRACKING</span></h1>
+      <p class="text-xl font-medium mb-[20%]">
+        Our marketing potential can be unlocked with accurate tracking that improves each campaign. Make data-driven decisions and real-time insights to stay ahead of other businesses. With our web-based system, you have complete control and are always in the driver's position. Reduce unpredictability from marketing and observe efficient growth. 
+        <br> Our goal at Enhance Tracking is your success.
+      </p>
+      <div class="flex items-center justify-center">
+        <a href="#" class="inline-block bg-[#F40000] text-white shadow-[5px_5px_5px_5px_rgba(0,0,0,0.25)] px-6 py-4 text-3xl cursor-pointer">View Products</a>
+      </div>
     </div>
-</body>
+  </main>
 
+  <img src="~/images/group.png" class="absolute bottom-0 left-0 w-[600px]" style="object-fit: contain; z-index: 50;"/>
+
+  <img src="~/images/diag-1.png" class="absolute top-0 left-0"/>
+  <img src="~/images/diag-2.png" class="absolute top-0 right-0 h-[400px]"/>
+  <img src="~/images/diag-3.png" class="absolute -bottom-[20%] right-0"/>
+</div>
