@@ -4,19 +4,19 @@
     {
       id: 0,
       name: "San Mig Pilsen",
-      imageSource: "images/a1.png",
+      imageSource: "/images/beer 1.png",
       quantity: 10 // maximum possible quantity
     },
     {
       id: 1,
       name: "San Mig Pilsen 2",
-      imageSource: "images/a1.png",
+      imageSource: "/images/can 1.png",
       quantity: 2 // maximum possible quantity
     },
     {
       id: 2,
       name: "San Mig Pilsen 3",
-      imageSource: "images/sample.webp",
+      imageSource: "/images/cocacola 1.png",
       quantity: 10 // maximum possible quantity
     },
   ]

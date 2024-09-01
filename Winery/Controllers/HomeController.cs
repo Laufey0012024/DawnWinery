@@ -28,6 +28,21 @@ namespace Winery.Controllers
             return View();
         }
 
+        public IActionResult ProductSelection()
+        {
+            return View();
+        }
+
+        public IActionResult SoftDrinks()
+        {
+            return View();
+        }
+
+        public IActionResult Beers()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
