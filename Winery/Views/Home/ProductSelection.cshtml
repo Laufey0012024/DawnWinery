@@ -1,0 +1,13 @@
+@{
+  Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+  ViewData["Title"] = "Test Page";
+}
+
+  <main class="grid grid-cols-2 min-h-screen">
+    <div class="grid place-items-center bg-[#C50F17]">
+      <a asp-area="" asp-controller="Home" asp-action="SoftDrinks" class="w-full max-w-[70%] text-center shadow-[5px_5px_5px_5px_rgba(0,0,0,0.25)] bg-white px-3 py-4 rounded-lg text-xl cursor-pointer uppercase font-medium">Soft Drinks</a>
+    </div>
+    <div class="grid place-items-center bg-[#EC9D00]">
+      <a asp-area="" asp-controller="Home" asp-action="Beers" class="w-full max-w-[70%] text-center shadow-[5px_5px_5px_5px_rgba(0,0,0,0.25)] bg-white px-3 py-4 rounded-lg text-xl cursor-pointer uppercase font-medium">Beers</a>
+    </div>
+  </main>
